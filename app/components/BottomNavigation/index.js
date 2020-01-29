@@ -1,47 +1,61 @@
-import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import * as React from 'react';
+import {BottomNavigation, Text} from 'react-native-paper';
+import {StyleSheet} from 'react-native';
+
+// Colors
 import Colors from '../../theme/Colors';
 
-const BottomNavigation = () => {
-  return (
-    <View style={styles.tabBar}>
-      <TouchableOpacity style={styles.tabItem}>
-        <Icon name="home" color={Colors.secondary} size={24} />
-        <Text style={styles.tabTitle}>Ana Sayfa</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.tabItem}>
-        <Icon name="assignment" color={Colors.secondary} size={24} />
-        <Text style={styles.tabTitle}>Temel Bilgiler</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.tabItem}>
-        <Icon name="info" color={Colors.secondary} size={24} />
-        <Text style={styles.tabTitle}>Bilgilendirme</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.tabItem}>
-        <Icon name="settings" color={Colors.secondary} size={24} />
-        <Text style={styles.tabTitle}>Ayarlar</Text>
-      </TouchableOpacity>
-    </View>
-  );
-};
+//Screens
+import MainScreen from '../../screens/MainScreen';
+import GeneralInfoScreen from '../../screens/GeneralInfoScreen';
+import InfoScreen from '../../screens/InfoScreen';
+import SettingsScreen from '../../screens/SettingsScreen';
+
+// Routes
+const HomeRoute = () => <MainScreen />;
+const GeneralInfoRoute = () => <GeneralInfoScreen />;
+const InfoRoute = () => <InfoScreen />;
+const SettingsRoute = () => <SettingsScreen />;
+
+export default class BottomNavigationBar extends React.Component {
+  state = {
+    index: 0,
+    routes: [
+      {key: 'home', title: 'Ana Sayfa', icon: 'home'},
+      {key: 'generalInfo', title: 'Temel Bilgiler', icon: 'book'},
+      {key: 'info', title: 'Bilgilendirme', icon: 'information'},
+      {key: 'settings', title: 'Ayarlar', icon: 'settings'},
+    ],
+  };
+
+  _handleIndexChange = index => this.setState({index});
+
+  _renderScene = BottomNavigation.SceneMap({
+    home: HomeRoute,
+    generalInfo: GeneralInfoRoute,
+    info: InfoRoute,
+    settings: SettingsRoute,
+  });
+
+  render() {
+    return (
+      <BottomNavigation
+        navigationState={this.state}
+        onIndexChange={this._handleIndexChange}
+        renderScene={this._renderScene}
+        labeled={true}
+        activeColor={Colors.primary}
+        inactiveColor={Colors.secondary}
+        style={styles.tabItem}
+        barStyle={styles.barStyle}
+      />
+    );
+  }
+}
 
 const styles = StyleSheet.create({
-  tabBar: {
-    backgroundColor: Colors.white,
-    height: 56,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
-  tabItem: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  tabTitle: {
-    fontSize: 11,
-    color: Colors.secondary,
-    paddingTop: 4,
+  barStyle: {
+    backgroundColor: 'white',
+    elevation: 0,
   },
 });
-
-export default BottomNavigation;
