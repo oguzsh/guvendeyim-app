@@ -1,0 +1,9 @@
+import * as React from 'react';
+import {Appbar, BottomNavigationBar} from '../../components';
+import {StyleSheet, Text} from 'react-native';
+
+const InfoScreen = () => {
+  return <Text> Bilgilendirme </Text>;
+};
+
+export default InfoScreen;

@@ -1,18 +1,15 @@
-import React, {useState, useEffect} from 'react';
-import {SafeAreaView, Text, View, StyleSheet, TextInput} from 'react-native';
+import React from 'react';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
 // Components
 import AppBar from './components/Appbar';
-import BottomNavigation from './components/BottomNavigation';
+import BottomNavigationBar from './components/BottomNavigation';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <AppBar />
-      <View style={styles.body}>
-        <Text> Hoşgeldiniz </Text>
-      </View>
-      <BottomNavigation />
+      <BottomNavigationBar />
     </SafeAreaView>
   );
 };
