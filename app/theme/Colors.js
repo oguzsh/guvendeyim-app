@@ -1,8 +1,8 @@
 export default {
-  transparent: 'rgba(0,0,0,0)',
   white: '#ffffff',
-  text: '#212529',
-  primary: '#007bff',
+  text: '#0000',
+  primary: '#D5002E',
   success: '#28a745',
   error: '#dc3545',
+  secondary: '#979797',
 };

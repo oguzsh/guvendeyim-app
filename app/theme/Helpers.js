@@ -2,9 +2,6 @@ import {StyleSheet} from 'react-native';
 import {Colors} from './Colors';
 
 export default StyleSheet.create({
-  backgroundReset: {
-    backgroundColor: Colors.transparent,
-  },
   center: {
     alignItems: 'center',
     justifyContent: 'center',

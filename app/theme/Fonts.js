@@ -14,12 +14,15 @@ const size = {
 export default StyleSheet.create({
   h1: {
     fontSize: size.h1,
+    fontFamily: 'Roboto-Medium',
   },
   h2: {
     fontSize: size.h2,
+    fontWeight: '400',
   },
   h3: {
     fontSize: size.h3,
+    fontWeight: '400',
   },
   normal: {
     fontSize: size.regular,
