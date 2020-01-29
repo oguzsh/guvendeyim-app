@@ -12,6 +12,7 @@
     "dependencies": {
         "react": "16.9.0",
         "react-native": "0.61.5",
+        "react-native-paper": "^3.5.1",
         "react-native-sms": "^1.10.0",
         "react-native-vector-icons": "^6.6.0"
     },

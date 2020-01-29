@@ -1,5 +1,5 @@
-import React from 'react';
-import {SafeAreaView, Text, View, StyleSheet} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {SafeAreaView, Text, View, StyleSheet, TextInput} from 'react-native';
 
 // Components
 import Appbar from './components/Appbar';
