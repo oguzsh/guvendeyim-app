@@ -21,7 +21,7 @@ The repository contains:
 - a [React Native](https://facebook.github.io/react-native/) (v**0.61.5**)
 - a [React Native SMS](https://www.npmjs.com/package/react-native-sms) (v**1.10.0**)
 - a [clear directory layout](#directory-layout) to provide a base architecture
-- a [React Navigation](https://reactnavigation.org/)
+- a [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [prettier](https://prettier.io/) and [eslint](https://eslint.org/) preconfigured for React Native
 
 ## Directory layout
@@ -31,6 +31,17 @@ The repository contains:
 - [`app/assets`](app/assets): assets (image, audio files, ...) used by the application
 - [`app/navigators`](app/navigators): react navigation navigators
 - [`app/theme`](app/theme): base styles for the application
+- [`app/store`](app/store): store for the application
+- [`app/reducers`](app/reducers): reducers for the application
+- [`app/actions`](app/actions): actions for the application
+
+## TODO
+
+- [ ] All Components
+- [ ] All Screens
+- [x] State Management
+- [x] Theme Utilities
+- [x] Send Message
 
 ## License
 
