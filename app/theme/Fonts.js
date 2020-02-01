@@ -24,6 +24,10 @@ export default StyleSheet.create({
     fontSize: size.h3,
     fontWeight: '400',
   },
+  h4: {
+    fontSize: size.h4,
+    fontWeight: '400',
+  },
   normal: {
     fontSize: size.regular,
   },
