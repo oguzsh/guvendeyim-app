@@ -1,25 +1,26 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+
 // Colors
 import {Colors, Fonts, Helpers} from '../../theme';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import SendSMS from 'react-native-sms';
 
-const _sendSMS = (phoneNumbers, message) => {
+const _sendSMS = (phoneNumbersArray, messageText) => {
   SendSMS.send({
-    body: message.toString(),
-    recipients: phoneNumbers,
+    body: messageText.toString(),
+    recipients: phoneNumbersArray,
     successTypes: ['sent', 'queued'],
     allowAndroidSendWithoutReadPermission: true,
   });
 };
 
-const MessageButton = (phoneNumbers, message) => {
+const MessageButton = props => {
   return (
     <TouchableOpacity
       style={[styles.buttonContainer, Helpers.center]}
-      onPress={() => _sendSMS(phoneNumbers, message)}>
+      onPress={() => _sendSMS(props.phoneNumbers, props.message)}>
       <View style={[styles.button, Helpers.center]}>
         <Icon name="check-circle" style={styles.buttonIcon} />
         <Text style={[styles.buttonText, Fonts.h1]}>GÜVENDEYİM</Text>
