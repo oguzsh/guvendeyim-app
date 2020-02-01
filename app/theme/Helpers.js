@@ -37,6 +37,10 @@ export default StyleSheet.create({
   crossStretch: {
     alignItems: 'stretch',
   },
+  spaceEvenlyCenter: {
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
   fill: {
     flex: 1,
   },
