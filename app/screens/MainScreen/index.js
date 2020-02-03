@@ -11,7 +11,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 // Components
 import MessageButton from '../../components/MessageButton';
 
-const MainScreen = ({navigation}) => {
+const MainScreen = () => {
   const {state} = useContext(MainContext);
   return (
     <View style={[styles.container, Helpers.spaceEvenlyCenter, Helpers.fill]}>
@@ -25,9 +25,6 @@ const MainScreen = ({navigation}) => {
 
 MainScreen.navigationOptions = ({navigation}) => ({
   title: 'Güvendeyim',
-  headerTitleStyle: {
-    fontFamily: 'Roboto-Medium',
-  },
   headerLeft: () => (
     <Image
       source={Images.logo}
@@ -36,8 +33,9 @@ MainScreen.navigationOptions = ({navigation}) => ({
     />
   ),
   headerRight: () => (
-    <TouchableOpacity onPress={() => navigation.navigate('Notifications')}>
-      <Icon name="notifications" style={styles.notificationIcon} />
+    <TouchableOpacity
+      onPress={() => console.log(navigation.navigate('Notification'))}>
+      <Icon name="notifications" size={24} color={Colors.secondary} />
     </TouchableOpacity>
   ),
 });
@@ -48,7 +46,7 @@ const styles = StyleSheet.create({
   },
   notificationIcon: {
     color: Colors.secondary,
-    fontSize: 24,
+    fontSize: 28,
     paddingHorizontal: 16,
   },
 });
