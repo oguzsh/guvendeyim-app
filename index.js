@@ -4,6 +4,7 @@ import App from './app/App';
 import {Provider as PaperProvider} from 'react-native-paper';
 import Store from './app/store/Store';
 import {name as appName} from './app.json';
+import 'react-native-gesture-handler';
 
 export default function Main() {
   return (
