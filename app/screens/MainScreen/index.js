@@ -22,7 +22,7 @@ const MainScreen = () => {
     </View>
   );
 };
-
+/*
 MainScreen.navigationOptions = ({navigation}) => ({
   title: 'Güvendeyim',
   headerLeft: () => (
@@ -39,7 +39,7 @@ MainScreen.navigationOptions = ({navigation}) => ({
     </TouchableOpacity>
   ),
 });
-
+*/
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.white,

@@ -1,22 +1,19 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import AppNavigator from './navigator/AppNavigator';
 import 'react-native-gesture-handler';
-import {AppContainer} from './navigator/AppNavigator';
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <AppContainer />
-    </SafeAreaView>
+    <SafeAreaProvider style={styles.container}>
+      <AppNavigator />
+    </SafeAreaProvider>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-  },
-  body: {
     flex: 1,
   },
 });
