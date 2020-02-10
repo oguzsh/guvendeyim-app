@@ -1,0 +1,18 @@
+[{
+        "title": "Deprem",
+        "content": "Deprem öncesinde, sırasında ve sonrasında neler yapabileceğinize dair acil durum planı yapın.",
+        "image": "deprem"
+    },
+
+    {
+        "title": "Sel",
+        "content": "Sel riski olan bir bölgede yaşıyorsanız hava durumu bilgilerini ve uyarularını sürekli o...",
+        "image": "sel"
+    },
+
+    {
+        "title": "Yangın",
+        "content": "Evinizde, iş yerinizde ve aracınızda mutlaka yönetmeliklere uygun yangın söndürme cihazı bulundu...",
+        "image": "yangin"
+    }
+]
