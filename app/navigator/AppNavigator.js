@@ -54,6 +54,16 @@ function GeneralInfoStackScreen() {
           headerTitleAlign: 'center',
         }}
       />
+      <GeneralInfoStack.Screen
+        name="Content"
+        component={ContentScreen}
+        options={{
+          headerTitleStyle: {
+            fontFamily: 'Roboto-Medium',
+          },
+          headerTitleAlign: 'center',
+        }}
+      />
     </GeneralInfoStack.Navigator>
   );
 }
