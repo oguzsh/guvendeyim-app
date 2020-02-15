@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {StyleSheet, View, FlatList} from 'react-native';
-import {Colors, Images} from '../../theme';
+import {Colors, Images, Helpers} from '../../theme';
 import uuid from 'react-native-uuid';
 
 // Components
@@ -21,7 +21,7 @@ const _renderItem = ({item}) => {
 
 const GeneralInfoScreen = props => {
   return (
-    <View style={[styles.container]}>
+    <View style={[styles.container, Helpers.fill, Helpers.crossCenter]}>
       <FlatList
         keyExtractor={item => uuid.v4(item)}
         data={data}
@@ -34,8 +34,6 @@ const GeneralInfoScreen = props => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.white,
-    alignItems: 'center',
-    flex: 1,
   },
 });
 
