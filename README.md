@@ -19,6 +19,7 @@ In this project, the current location of the user is sent to the phone numbers s
 The repository contains:
 
 - a [React Native](https://facebook.github.io/react-native/) (v**0.61.5**)
+- a [React Navigation](https://reactnavigation.org/en/) (v**5**)
 - a [React Native SMS](https://www.npmjs.com/package/react-native-sms) (v**1.10.0**)
 - a [clear directory layout](#directory-layout) to provide a base architecture
 - a [React Hooks](https://reactjs.org/docs/hooks-intro.html)
@@ -26,10 +27,11 @@ The repository contains:
 
 ## Directory layout
 
-- [`app/components`](App/Components): presentational components
+- [`app/components`](app/Components): presentational components
 - [`app/screens`](app/screens): the application's screens
 - [`app/assets`](app/assets): assets (image, audio files, ...) used by the application
 - [`app/navigators`](app/navigators): react navigation navigators
+- [`app/data`](app/data): project's local json data
 - [`app/theme`](app/theme): base styles for the application
 - [`app/store`](app/store): store for the application
 - [`app/reducers`](app/reducers): reducers for the application
@@ -42,6 +44,7 @@ The repository contains:
 - [x] State Management
 - [x] Theme Utilities
 - [x] Send Message
+- [x] Routing Operations
 
 ## License
 
