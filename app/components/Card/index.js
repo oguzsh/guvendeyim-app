@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import Author from '../Author';
 import {useNavigation} from '@react-navigation/native';
 
 import {Colors, Fonts, Helpers, Images} from '../../theme';
@@ -7,8 +8,10 @@ import {Colors, Fonts, Helpers, Images} from '../../theme';
 const Card = props => {
   const navigation = useNavigation();
   const {index, title, content, image} = props;
+  const paragraph = content.firstContent.paragraph;
   return (
     <TouchableOpacity
+      activeOpacity={0.5}
       onPress={() =>
         navigation.navigate('Content', {
           title: title,
@@ -18,27 +21,24 @@ const Card = props => {
         })
       }>
       <View style={[Helpers.colMain, Helpers.crossStretch, styles.card]}>
-        <View style={[Helpers.rowCross, Helpers.mainSpaceBetween]}>
-          <View style={[Helpers.rowCross, Helpers.mainStart]}>
-            <Image
-              source={Images.logo}
-              style={styles.cardImage}
-              resizeMode={'cover'}
-            />
-
-            <Text style={[styles.authorText, Fonts.h3, Helpers.textLeft]}>
-              Akut | Arama Kurtarma Derneği
-            </Text>
-          </View>
-        </View>
+        <Author />
         <View
           style={[Helpers.row, Helpers.mainSpaceBetween, styles.cardContent]}>
           <View style={styles.cardContentArea}>
             <Text style={[Fonts.h2, styles.contentTitle]}>{title}</Text>
-            <Text style={[styles.contentParagraph, Fonts.h3]}>{content}</Text>
+            <Text
+              style={[styles.contentParagraph, Fonts.h3]}
+              numberOfLines={4}
+              ellipsizeMode={'tail'}>
+              {paragraph}
+            </Text>
           </View>
-          <View style={Helpers.mainCenter}>
-            <Image source={image} resizeMode={'contain'} />
+          <View style={[Helpers.mainCenter, styles.cardImage]}>
+            <Image
+              source={Images[image]}
+              style={{width: 100, height: 100}}
+              resizeMode={'contain'}
+            />
           </View>
         </View>
       </View>
@@ -57,10 +57,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     elevation: 2,
   },
-  authorText: {
-    color: Colors.secondary,
-    marginLeft: 8,
-  },
   contentTitle: {
     marginVertical: 5,
     fontFamily: 'Roboto-Medium',
@@ -70,9 +66,7 @@ const styles = StyleSheet.create({
     width: 260,
   },
   cardImage: {
-    width: 32,
-    height: 32,
-    borderRadius: 200,
+    marginHorizontal: 10,
   },
 });
 
