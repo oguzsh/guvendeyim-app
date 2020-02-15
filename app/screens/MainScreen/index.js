@@ -1,12 +1,11 @@
 import React, {useContext} from 'react';
-import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
 // Main Context
 import {MainContext} from '../../store/Store';
 
 // Utilities
-import {Colors, Fonts, Helpers, Images} from '../../theme';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import {Colors, Fonts, Helpers} from '../../theme';
 
 // Components
 import MessageButton from '../../components/MessageButton';
@@ -22,24 +21,6 @@ const MainScreen = () => {
     </View>
   );
 };
-/*
-MainScreen.navigationOptions = ({navigation}) => ({
-  title: 'Güvendeyim',
-  headerLeft: () => (
-    <Image
-      source={Images.logo}
-      style={{width: 32, height: 35, marginHorizontal: 16}}
-      resizeMode={'contain'}
-    />
-  ),
-  headerRight: () => (
-    <TouchableOpacity
-      onPress={() => console.log(navigation.navigate('Notification'))}>
-      <Icon name="notifications" size={24} color={Colors.secondary} />
-    </TouchableOpacity>
-  ),
-});
-*/
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.white,
