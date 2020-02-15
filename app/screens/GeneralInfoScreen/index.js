@@ -5,6 +5,7 @@ import uuid from 'react-native-uuid';
 
 // Components
 import Card from '../../components/Card';
+import Layout from '../../components/Layout';
 
 import data from '../../data/data.json';
 
@@ -21,20 +22,16 @@ const _renderItem = ({item}) => {
 
 const GeneralInfoScreen = props => {
   return (
-    <View style={[styles.container, Helpers.fill, Helpers.crossCenter]}>
-      <FlatList
-        keyExtractor={item => uuid.v4(item)}
-        data={data}
-        renderItem={_renderItem}
-      />
-    </View>
+    <Layout>
+      <View style={[Helpers.fill, Helpers.crossCenter]}>
+        <FlatList
+          keyExtractor={item => uuid.v4(item)}
+          data={data}
+          renderItem={_renderItem}
+        />
+      </View>
+    </Layout>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: Colors.white,
-  },
-});
 
 export default GeneralInfoScreen;
