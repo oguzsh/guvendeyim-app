@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {StyleSheet, View, FlatList} from 'react-native';
-import {Colors, Images, Helpers} from '../../theme';
+import {Colors, Helpers} from '../../theme';
 import uuid from 'react-native-uuid';
 
 // Components
@@ -14,7 +14,7 @@ const _renderItem = ({item}) => {
       index={uuid.v4()}
       title={item.title}
       content={item.content}
-      image={Images[item.image]}
+      image={item.image}
     />
   );
 };
