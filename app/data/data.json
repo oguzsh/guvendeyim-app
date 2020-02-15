@@ -1,18 +1,58 @@
 [{
         "title": "Deprem",
-        "content": "Deprem öncesinde, sırasında ve sonrasında neler yapabileceğinize dair acil durum planı yapın.",
+        "content": {
+            "firstContent": {
+                "title": "Deprem Öncesi Yapılması Gerekenler",
+                "paragraph": "Deprem öncesinde, sırasında ve sonrasında neler yapabileceğinize dair acil durum planı yapın. Unutmayın, yapabileceğiniz birçok şey var ve en basit plan bile plansızlıktan iyidir. Mutlaka bir 'acil durum malzemeleri listesi' hazırlayın, daha önce 'acil durum çantası' hazırlamadıysanız, listedeki malzemeleri evi terk ederken bir çantaya koyarak yanınıza almayı unutmayın. Deprem yakınlarınızdan ayrı olduğunuz bir anda meydana gelirse, nerede, nasıl buluşacağınızı saptayın. Binanızın yönetmeliklere ve standartlara uygun yapılıp yapılmamış olduğunu kontrol ettirin. Unutmayın, can ve mal kaybına neden olan deprem değil, mühendislik ilkelerine uyulmadan yapılmış binalardır. Evinizdeki devrilebilir, ağır eşyaları duvara sabitleyin. Düşmeleri halinde zarar görmenize neden olabilecek nesneleri (avize, bardak, tabak vb.) saptayın ve önlem alın. Bulunduğunuz mahallede bir afetten sonra hizmet alabileceğiniz (sağlık, barınma, güvenlik vb.) noktaları öğrenin. Yangına ve gaz zehirlenmelerine karşı Isiticıları ve varsa isitıcı baca borularını sabitleyin.  Olası kayıplarınızı karşılayabilmek için evinizi, iş yerinizi ve eşyalarınızı, kendinizi ve ailenizi sigorta ettirin."
+            },
+            "secondContent": {
+                "title": "Deprem Sırasında Yapmanız Gerekenler",
+                "paragraph": "Mümkün olduğunca hareket etmeyin ve yer değiştirmeye çalışın. Bir binanın içindeyseniz merdivenlerden, asansörlerden ve balkonlardan uzak durun. Pencerelere yaklaşmayın (camlar kırılıp savrulabilir.) Eğer binanız deprem yönetmeliklerine uygun yapılmış ve eşyalarınız sabitlenmiş ise ağırlık merkezi yere yakın, sağlam olduğunu değerlendirdiğiniz bir eşyanın yanında; YAT-KORUN-TUTUN uygulamasını yapın. Yere yan yatın, ayaklarınızı karnıniza çekin, üstte bulunan elinizle başınızı koruyun, altta kalan elinizle de yanına yattığınız eşyaya tutunun. Bu hareketi masa vb. bir eşyanın altına girerek de yapabilirsiniz. Eğer binanız deprem yönetmeliklerine uygun yapılmamış veya eşyalarınız sabitlenmemiş ise bir öneride bulunmamayı tercih ediyoruz. Deprem anında dışarıdaysanız, bina, üst geçit, Köprü vb. yapılardan, direklerden, ağaçlardan, elektrik hatlarından uzak durmaya çalışın."
+            },
+            "thirdContent": {
+                "title": "Deprem Sonrasında Yapmanız Gerekenler",
+                "paragraph": "Daha önce 'acil durum çantası' hazırlamadıysanız, hazırlamış olduğunuz 'acil durum malzemeleri listesi'ndeki malzemeleri bir çantaya koyun ve evi terk ederken yanınıza alın. Binanızdan çıkarken, doğal gaz kaçağı yok ise; önce doğal gaz vanasını, sonra elektrik şalterini ve en son su vanasını kapatın. Doğal gaz kaçağı var ise elektrik düğmelerine ve şalterine dokunmayın; elektrik düğmeleri açık ise açık, kapalı ise kapalı kalmalıdır. Aydınlatma amacıyla kıvılcım çıkarabilecek aletler, kibrit ve çakmak kullanmayın. Sigara içmeyin. Artçı depremler olması olağandır. Artçı depremleri hissettiğinizde YAT-KORUN- TUTUN yapın. Hasar görmüş binalardan uzak durun. Yetkililer tehlike olmadığını söyleyene kadar binalara girmeyin. Yaşamsal önemi olan durumlar dışında telefonları kullanmayın, hatları meşgul etmeyin. Sosyal medya üzerinden doğruluğu kesin olmayan bilgileri paylaşmayın. Yetkililer izin verdikten sonra, binanıza girmeden önce, doğal gaz ve elektrik sistemlerini uzman kişilere kontrol ettirin."
+            }
+        },
         "image": "deprem"
     },
 
     {
         "title": "Sel",
-        "content": "Sel riski olan bir bölgede yaşıyorsanız hava durumu bilgilerini ve uyarularını sürekli o...",
+        "content": {
+            "firstContent": {
+                "title": "Sel Öncesinde Yapmanız Gerekenler",
+                "paragraph": "Sel riski olan bir bölgede yaşıyorsanız hava durumu bilgilerini ve uyarılarını sürekli olarak takip edin. Aileniz ve işyeriniz için yapmış olduğunuz “Acil Durum Planı”na sel öncesi, sel sırası ve sel sonrası yapılacakları da ilave etmeyi unutmayın. Aileniz ve işyeriniz için yapmış olduğunuz “Acil Durum Planı”na sel öncesi, sel sırası ve sel sonrası yapılacakları da ilave etmeyi unutmayın. Elektrikli cihazlarınızı ve değerli eşyalarınızı ( tapu, sigorta poliçesi, pasaport vb. belgeler dahil ) suyun yükselmesinden etkilenmeyecek yerlere koyun, sizin için önemli mal ve eşyalarınızı bodrum katlarında saklamayın. Temiz ve kapalı kaplarda içme suyu bulundurun. Mutlaka bir “acil durum malzemeleri listesi” hazırlayın, daha önce “acil durum çantası” hazırlamadıysanız, listedeki malzemeleri evi terk ederken bir çantaya koyarak yanınıza almayı unutmayın. Bir sel bölgesinde yaşıyor iseniz, suyun binanıza girebileceği noktalara yerleştirmek üzere kum torbaları edinin."
+            },
+            "secondContent": {
+                "title": "Sel Sırasında Yapmanız Gerekenler",
+                "paragraph": "Sel olasılığını yeterince erken haber aldıysanız, kapı ve pencere gibi suyun girebileceği noktaları kum torbaları ile destekleyin. Binadan içeri su girmesi ihtimali belirdiğinde elektrik tesisatını hemen kapatın, suyun ulaşmayacağı üst katlara çıkın. Yangın ya da yapıyı tehdit eden bir durum varsa derhal binayı tahliye edin. Binanızdan ayrılmak zorunda kalırsanız ya da sel anında açık alanda bulunuyorsanız hemen suyun ulaşamayacağı yüksek bir yere çıkın. Sel sularının içinde yürümeye ve yüzmeye çalışmayın. Sel sırasında suyun basıncının kanalizasyon kapaklarının ve mazgalların yerinden çıkmasına neden olabileceğini unutmayın. Sel suları içinde araç kullanmayın, suyun yüksekliği çok az olsa da engel ya da çukurları göremeyebilirsiniz. Hızlı akan su üzerindeki köprülerden uzak durun."
+            },
+            "thirdContent": {
+                "title": "Sel Sonrasında Yapmanız Gerekenler",
+                "paragraph": "Daha önce 'acil durum çantası' hazırlamadıysanız, hazırlamış olduğunuz 'acil durum malzemeleri listesi'ndeki malzemeleri bir çantaya koyun ve evi terk ederken yanınıza alın. Kullanmadan önce içme suyunu en az 10 dakika fokurdatarak kaynatın. Binanızdan çıkarken, doğal gaz kaçağı yok ise; önce doğal gaz vanasını, sonra elektrik şalterini ve en son su vanasını kapatın. Doğal gaz kaçağı var ise elektrik düğmelerine ve şalterine dokunmayın; elektrik düğmeleri açık ise açık, kapalı ise kapalı kalmalıdır. Aydınlatma amacıyla kıvılcım çıkarabilecek aletler, kibrit ve çakmak kullanmayın. Acil durum olmadıkça araçları kullanmayın. Yaşamsal önemi olan durumlar dışında telefonları kullanmayın, hatları meşgul etmeyin. Sosyal medya üzerinden doğruluğu kesin olmayan bilgileri paylaşmayın."
+            }
+        },
         "image": "sel"
     },
 
     {
         "title": "Yangın",
-        "content": "Evinizde, iş yerinizde ve aracınızda mutlaka yönetmeliklere uygun yangın söndürme cihazı bulundu...",
+        "content": {
+            "firstContent": {
+                "title": "Yangın Öncesinde Yapmanız Gerekenler",
+                "paragraph": "Evinizde, iş yerinizde ve aracınızda mutlaka yönetmeliklere uygun yangın söndürme cihazı bulundurun. LPG ve doğal gaz kullanılan yerlerde kaçağa karşı mutlaka gaz dedektörü bulundurun. Isı ve duman dedektörü taktırın. Temel yangın eğitimi alın. Olası kayıplarınızı karşılayabilmek için evinizi, iş yerinizi ve eşyalarınızı, kendinizi ve ailenizi sigorta ettirin."
+            },
+            "secondContent": {
+                "title": "Yangın Sırasında Yapmanız Gerekenler",
+                "paragraph": "Varsa derhal yangın alarmını çalıştırın. Yangın alarmı yok ise bağırarak çevrenizi bilgilendirin. Yangın tehlikesinden uzaklaşıp güvenli bir yerden itfaiyeyi (110) arayın. Yangın henüz başlamış ve bir kişinin müdahale edebileceği boyutta ise, sınıfına uygun yangın söndürme cihazı kullanarak söndürmeye çalışabilirsiniz (temel yangın eğitimi almış iseniz). Dumanlı alanlarda emekleyin veya çökerek ilerleyin. Böylece tavanda biriken dumandan ve ısıdan çok daha az etkilenirsiniz. Tahliye Sırasında Yapmanız Gerekenler : Derhal bulunduğunuz alanı terk edin. Bulunduğunuz alandaki pencereleri kesinlikle açmayın, camları kırmayın! İçeri giren bol oksijenli hava yangının büyümesine neden olur. Asansör kullanmayın. Kapalı bir kapıyı açmadan önce elinizin tersi ile AŞAĞIDAN YUKARIYA DOĞRU sürerek ısı kontrolü yapın. Kontrol Ettiğiniz Kapı Sıcak Değilse Yapmanız Gerekenler: Kapıyı açın ve tahliyeye devam edin. Dumanlı alanlarda emekleyin veya çökerek ilerleyin. Böylece tavanda biriken dumandan ve ısıdan çok daha az etkilenirsiniz. Çıktığınız her kapıyı kapatın ama kilitlemeyin. Kontrol Ettiğiniz Kapı Sıcak İse Yapmanız Gerekenler: Dumanın ve sıcak havanın içeri girmemesi için battaniye veya benzeri bir nesneyi ıslattıktan sonra kapının altını tıkayın, mümkünse üzerini de kaplamaya çalışın. Pencereye yakın durun. Pencereyi iki parmak açarak hava almaya çalışın. Kesinlikle camları kırmayın. Kolay fark edilecek renkte bir bez parçası vb. sallayarak yerinizi dışarıdakilere belli edin."
+            },
+            "thirdContent": {
+                "title": "Yangın Sonrasında Yapmanız Gerekenler",
+                "paragraph": "Binanızı yapısal olarak muayene ettirin."
+            }
+        },
         "image": "yangin"
-    }
+    },
+
 ]
