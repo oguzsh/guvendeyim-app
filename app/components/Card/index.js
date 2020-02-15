@@ -3,19 +3,6 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import {Colors, Fonts, Helpers, Images} from '../../theme';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
-const _navigateContent = (itemId, itemTitle, itemContent, itemImage) => {
-  this.props.navigation.navigate({
-    routeName: 'Content',
-    params: {
-      title: itemTitle,
-      content: itemContent,
-      image: itemImage,
-    },
-    key: itemId,
-  });
-};
 
 const Card = props => {
   const navigation = useNavigation();
@@ -27,28 +14,30 @@ const Card = props => {
           title: title,
           content: content,
           image: image,
+          key: index,
         })
       }>
-      <View style={styles.card}>
-        <View style={styles.cardTop}>
-          <View style={styles.cardLeft}>
+      <View style={[Helpers.colMain, Helpers.crossStretch, styles.card]}>
+        <View style={[Helpers.rowCross, Helpers.mainSpaceBetween]}>
+          <View style={[Helpers.rowCross, Helpers.mainStart]}>
             <Image
               source={Images.logo}
-              style={{width: 32, height: 32, borderRadius: 200}}
+              style={styles.cardImage}
               resizeMode={'cover'}
             />
 
-            <Text style={[styles.authorText, Fonts.h3]}>
+            <Text style={[styles.authorText, Fonts.h3, Helpers.textLeft]}>
               Akut | Arama Kurtarma Derneği
             </Text>
           </View>
         </View>
-        <View style={styles.cardContent}>
+        <View
+          style={[Helpers.row, Helpers.mainSpaceBetween, styles.cardContent]}>
           <View style={styles.cardContentArea}>
             <Text style={[Fonts.h2, styles.contentTitle]}>{title}</Text>
             <Text style={[styles.contentParagraph, Fonts.h3]}>{content}</Text>
           </View>
-          <View style={styles.imageContainer}>
+          <View style={Helpers.mainCenter}>
             <Image source={image} resizeMode={'contain'} />
           </View>
         </View>
@@ -59,9 +48,6 @@ const Card = props => {
 
 const styles = StyleSheet.create({
   card: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'stretch',
     width: 380,
     paddingTop: 18,
     paddingBottom: 18,
@@ -71,20 +57,9 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     elevation: 2,
   },
-  cardTop: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
   authorText: {
-    textAlign: 'left',
     color: Colors.secondary,
     marginLeft: 8,
-  },
-  cardLeft: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
   },
   contentTitle: {
     marginVertical: 5,
@@ -92,12 +67,12 @@ const styles = StyleSheet.create({
   },
   cardContent: {
     marginVertical: 18,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     width: 260,
   },
-  imageContainer: {
-    justifyContent: 'center',
+  cardImage: {
+    width: 32,
+    height: 32,
+    borderRadius: 200,
   },
 });
 
