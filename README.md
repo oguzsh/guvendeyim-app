@@ -39,7 +39,7 @@ The repository contains:
 
 ## TODO
 
-- [ ] All Components
+- [x] All Components
 - [x] All Screens
 - [x] State Management
 - [x] Theme Utilities
