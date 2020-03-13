@@ -17,10 +17,13 @@ const _sendSMS = (phoneNumbersArray, messageText) => {
 };
 
 const MessageButton = props => {
+  const phoneNumbers = props.phoneNumbers;
+  const message = props.message;
+
   return (
     <TouchableOpacity
       style={[styles.buttonContainer, Helpers.center]}
-      onPress={() => _sendSMS(props.phoneNumbers, props.message)}>
+      onPress={() => _sendSMS(phoneNumbers, message)}>
       <View style={[styles.button, Helpers.center]}>
         <Icon name="check-circle" style={styles.buttonIcon} />
         <Text style={[styles.buttonText, Fonts.h1]}>GÜVENDEYİM</Text>

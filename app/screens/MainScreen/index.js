@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 
 // Main Context
 import {MainContext} from '../../store/Store';
 
 // Utilities
-import {Colors, Fonts, Helpers} from '../../theme';
+import {Fonts, Helpers} from '../../theme';
 
 // Components
 import MessageButton from '../../components/MessageButton';
@@ -24,12 +24,5 @@ const MainScreen = () => {
     </Layout>
   );
 };
-const styles = StyleSheet.create({
-  notificationIcon: {
-    color: Colors.secondary,
-    fontSize: 28,
-    paddingHorizontal: 16,
-  },
-});
 
 export default MainScreen;

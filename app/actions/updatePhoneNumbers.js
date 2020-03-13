@@ -1,1 +1,4 @@
-export const updatePhoneNumbers = () => ({type: 'updatePhoneNumbers'});
+export const updatePhoneNumbers = newNumbers => ({
+  type: 'updatePhoneNumbers',
+  payload: newNumbers,
+});

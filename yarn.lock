@@ -1243,6 +1243,11 @@
     lodash.unescape "4.0.1"
     semver "5.5.0"
 
+"@yfuks/react-native-action-sheet@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@yfuks/react-native-action-sheet/-/react-native-action-sheet-0.0.4.tgz#8388b83696d750885b286f75376b2e61fe072b79"
+  integrity sha512-3P2924PEZlrmh6agDVpIIW8rhhkJySfOKjl6XsrEAVgDkyG99vuJRFQVmFPnE6Tk67PBfR2cXV3FcFEk6vcZ0g==
+
 abab@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.3.tgz#623e2075e02eb2d3f2475e49f99c91846467907a"
@@ -5583,6 +5588,11 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
+react-native-contacts@^5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/react-native-contacts/-/react-native-contacts-5.0.7.tgz#19b59edd3702ebdc389db266089e5f9370ea7501"
+  integrity sha512-IRMiJCBJ98nK4v/oNueD1hXiqbmUOgncSIdL60NVSygH4ksqn2E2ipGwy81GAYmMk/yRgJgDB47QmOBlYt9Q1g==
+
 react-native-gesture-handler@^1.5.5:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.5.5.tgz#513d6d65c4e24efd6d69be0006c7cd3bc9045358"
@@ -5632,10 +5642,22 @@ react-native-screens@^2.0.0-alpha.33:
   dependencies:
     debounce "^1.2.0"
 
+react-native-select-contact@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-select-contact/-/react-native-select-contact-1.2.1.tgz#d0e0f3e5e1cd050daeffc4252a1f669d7146bd3e"
+  integrity sha512-LAr+HIPLOGyoQZtnqVcScKMLViDqk64v6RJ6gXKvVInAM19exVBRV2wNdC1ICrhPR/oQMujeP3ULxqIdBNh7DA==
+  optionalDependencies:
+    "@yfuks/react-native-action-sheet" "^0.0.4"
+
 react-native-sms@^1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/react-native-sms/-/react-native-sms-1.10.0.tgz#ee7607e8ad36452f9d3aaa2005e69225857c15f0"
   integrity sha512-IhP+w39Exu3mwksNIk7MIgDjFXqvNIlaWvhNPlRQxo5AYKNdluNIQBWqXdHHqlAgHhs2k6lmcLu2Y0TlHkowSQ==
+
+react-native-text-input-mask@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-text-input-mask/-/react-native-text-input-mask-2.0.0.tgz#9cb793e764355d9282d92ea5231d8030a7ca5692"
+  integrity sha512-kP8gURb1+6iR6CxfUx802f4ja9Jzer76hY1w0cjaCVsfbbzyykYIAANTnlxbmFFv/8pQl4NTm1CbQqkg0Cp/gA==
 
 react-native-uuid@^1.4.9:
   version "1.4.9"

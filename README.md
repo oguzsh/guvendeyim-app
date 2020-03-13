@@ -27,7 +27,7 @@ The repository contains:
 
 ## Directory layout
 
-- [`app/components`](app/Components): presentational components
+- [`app/components`](app/components): presentational components
 - [`app/screens`](app/screens): the application's screens
 - [`app/assets`](app/assets): assets (image, audio files, ...) used by the application
 - [`app/navigators`](app/navigators): react navigation navigators
@@ -40,7 +40,7 @@ The repository contains:
 ## TODO
 
 - [ ] All Components
-- [ ] All Screens
+- [x] All Screens
 - [x] State Management
 - [x] Theme Utilities
 - [x] Send Message

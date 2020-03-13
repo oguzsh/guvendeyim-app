@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {StyleSheet, View, FlatList} from 'react-native';
-import {Colors, Helpers} from '../../theme';
+import {View, FlatList} from 'react-native';
+import {Helpers} from '../../theme';
 import uuid from 'react-native-uuid';
 
 // Components
