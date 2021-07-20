@@ -17,7 +17,7 @@
         "buffer": "^5.4.3",
         "minimist": "1.2.3",
         "react": "16.9.0",
-        "react-native": "0.61.5",
+        "react-native": "0.62.3",
         "react-native-contacts": "^5.0.7",
         "react-native-gesture-handler": "^1.5.5",
         "react-native-paper": "^3.5.1",
