@@ -21,7 +21,7 @@
         "react-native-contacts": "^5.0.7",
         "react-native-gesture-handler": "^1.5.5",
         "react-native-paper": "^3.5.1",
-        "react-native-reanimated": "^1.7.0",
+        "react-native-reanimated": "^2.10.0",
         "react-native-safe-area-context": "^0.6.4",
         "react-native-screens": "^2.0.0-alpha.33",
         "react-native-select-contact": "^1.2.1",
